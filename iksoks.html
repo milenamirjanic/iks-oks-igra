@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>IKS OKS</title>
+	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/iksoks.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        
+        <div id="iksoks">
+            <div id="polje_0_0" onclick="pritisnut(0,0)"></div>
+            <div id="polje_0_1" onclick="pritisnut(0,1)"></div>
+            <div id="polje_0_2" onclick="pritisnut(0,2)"></div>
+
+            
+            <div id="polje_1_0" onclick="pritisnut(1,0)"></div>
+            <div id="polje_1_1" onclick="pritisnut(1,1)"></div>
+            <div id="polje_1_2" onclick="pritisnut(1,2)"></div>
+
+            
+            <div id="polje_2_0" onclick="pritisnut(2,0)"></div>
+            <div id="polje_2_1" onclick="pritisnut(2,1)"></div>
+            <div id="polje_2_2" onclick="pritisnut(2,2)"></div>
+        </div><!-- #iksoks -->
+        <p id="poruka"></p>
+        <button id="button" onclick="newGame()"> NOVA IGRA</button>
+
+        <div id="stanje">
+            <p> Pobeda X : <span id="pobeda-x">0</span></p>
+            <p> Pobeda O : <span id="pobeda-o">0</span></p>
+        </div>
+    </div><!-- #wrapper-->	
+<script src="iksoks.js"></script>
+</body>
+</html>

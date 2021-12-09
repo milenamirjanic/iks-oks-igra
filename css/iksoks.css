@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: coral;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Comfortaa', cursive;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#iksoks {
+    height: 480px;
+    width: 480px;
+    margin: 0 auto;
+    background-color: white;
+    display: grid;
+    outline: 3px solid black;
+    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3, auto);
+    grid-gap:0;
+}
+
+#iksoks > div{
+    border: 3px solid black;
+    width:  154px;
+    height: 154px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#iksoks p {
+    font-size: 155px;
+    line-height: 155px;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.iks {
+    color: red;
+}
+
+.oks {
+    color: blue;
+}
+
+
+#poruka {
+    position: fixed;
+    top:30vh;
+    right: 100px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    display: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#poruka span {
+    color: green;
+    font-weight: 700;
+    font-size: 70px;
+    display: block;
+    text-align: center;
+}
+
+#button {
+    display: none;
+    position: fixed;
+    bottom:30vh;
+    right: 100px;
+    z-index: 100; 
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px auto;
+    border: none;
+}
+
+#button:hover{
+    background-color:rgb(114, 114, 114);
+}
+#button:active{ 
+    background-color: rgb(56, 56, 56);
+}
+
+#stanje {
+    position: fixed;
+    top:30vh;
+    left: 100px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#stanje span {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+#stanje #pobeda-x {
+    color: red;
+}
+#stanje #pobeda-o{
+    color:blue;
+}
